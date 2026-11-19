@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sami Chic | Catálogo Oficial de Fragancias</title>
+
     <!-- Google Fonts: Great Vibes (Caligráfica) + Montserrat (Catálogo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <style>
         :root {
             --bg-primary: #121212;
@@ -41,14 +44,21 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .animate-fade-in {
             animation: fadeIn 0.5s ease-out forwards;
         }
 
-        /* BANNER SUPERIOR CON AMBIENTE OSCURO ELEGANTE */
+        /* Banner superior con ambiente oscuro elegante */
         .hero-banner {
             background: linear-gradient(180deg, rgba(18, 18, 18, 0.45) 0%, rgba(18, 18, 18, 0.92) 100%),
                         url('') center/cover no-repeat,
@@ -67,25 +77,41 @@
 </head>
 <body class="min-h-screen relative selection:bg-[#D4AF37] selection:text-[#121212]">
 
-    <!-- 1. BOTONES FLOTANTES EN LA ESQUINA INFERIOR DERECHA (SOLO ÍCONOS) -->
+    <!-- 1. BOTONES FLOTANTES EN LA ESQUINA INFERIOR DERECHA -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <!-- Instagram -->
-        <a href="https://www.instagram.com/samichic28?exln=cG13YWx4YjQ5ZXVw" target="_blank" aria-label="Instagram" class="w-12 h-12 bg-gradient-to-tr from-[#997A2C] via-[#D4AF37] to-[#F3E5AB] hover:opacity-90 text-[#121212] rounded-full flex items-center justify-center shadow-lg shadow-black/50 transition transform hover:scale-110">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <a
+            href="https://www.instagram.com/samichic28?exln=cG13YWx4YjQ5ZXVw"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            class="w-12 h-12 bg-gradient-to-tr from-[#997A2C] via-[#D4AF37] to-[#F3E5AB] hover:opacity-90 text-[#121212] rounded-full flex items-center justify-center shadow-lg shadow-black/50 transition transform hover:scale-110"
+        >
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
         </a>
+
         <!-- WhatsApp -->
-        <a href="https://wa.me/584242392516?text=Hola,%20vengo%20de%20su%20catálogo%20digital" target="_blank" aria-label="WhatsApp" class="w-12 h-12 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full flex items-center justify-center shadow-lg shadow-black/50 transition transform hover:scale-110">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <a
+            href="https://wa.me/584242392516?text=Hola,%20vengo%20de%20su%20catálogo%20digital"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            class="w-12 h-12 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full flex items-center justify-center shadow-lg shadow-black/50 transition transform hover:scale-110"
+        >
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
         </a>
     </div>
 
-    <!-- 2. HEADER / BANNER SUPERIOR CON TU LOGO DE FONDO -->
+    <!-- 2. HEADER / BANNER SUPERIOR -->
     <header class="hero-banner text-white py-14 px-4 text-center shadow-lg border-b border-[#D4AF37]/30">
         <div class="max-w-4xl mx-auto animate-fade-in flex flex-col items-center">
-            <!-- Logo destacado arriba -->
-            <img 
-                src="logo.jpeg" 
-                alt="Logo Sami Chic" 
+            <img
+                src="logo.jpeg"
+                alt="Logo Sami Chic"
                 class="hero-logo-badge w-28 h-28 md:w-32 md:h-32 object-cover rounded-full border-2 border-[#D4AF37]/70 mb-3 shadow-xl"
             >
 
@@ -94,6 +120,7 @@
                     Sami Chic
                 </h1>
             </div>
+
             <p class="font-script text-2xl md:text-3xl text-[#F3E5AB] mb-2 drop-shadow">“Brilla en cada paso”</p>
             <p class="text-[#A39E93] text-xs md:text-sm uppercase tracking-[0.2em]">Catálogo oficial de fragancias</p>
         </div>
@@ -101,18 +128,25 @@
 
     <!-- 3. CONTENIDO PRINCIPAL: BUSCADOR, FILTROS Y PRODUCTOS -->
     <main class="max-w-7xl mx-auto px-4 py-8">
-        
-        <!-- BARRA DE BÚSQUEDA Y FILTROS -->
+        <!-- Barra de búsqueda y filtros -->
         <section class="bg-[#1C1C1C]/95 border border-[#D4AF37]/25 p-4 rounded-2xl mb-8 shadow-lg">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <!-- Buscador por nombre -->
                 <div class="relative">
-                    <input type="text" id="input-buscador" placeholder="🔍 Buscar fragancia..." class="w-full bg-[#121212] border border-[#997A2C]/40 text-[#F5F5F0] placeholder-[#A39E93] text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:border-[#D4AF37] transition">
+                    <input
+                        type="text"
+                        id="input-buscador"
+                        placeholder="🔍 Buscar fragancia..."
+                        class="w-full bg-[#121212] border border-[#997A2C]/40 text-[#F5F5F0] placeholder-[#A39E93] text-sm rounded-xl px-4 py-2.5 focus:outline-none focus:border-[#D4AF37] transition"
+                    >
                 </div>
 
-                <!-- Filtro por Género / Tipo -->
+                <!-- Filtro por Género -->
                 <div>
-                    <select id="filtro-genero" class="w-full bg-[#121212] border border-[#997A2C]/40 text-[#F5F5F0] text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-[#D4AF37] transition">
+                    <select
+                        id="filtro-genero"
+                        class="w-full bg-[#121212] border border-[#997A2C]/40 text-[#F5F5F0] text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-[#D4AF37] transition"
+                    >
                         <option value="todos">Todos los géneros</option>
                         <option value="Hombre">Hombre</option>
                         <option value="Mujer">Mujer</option>
@@ -120,16 +154,22 @@
                     </select>
                 </div>
 
-                <!-- Filtro por Marca (Se llena dinámicamente) -->
+                <!-- Filtro por Marca (llenado dinámico) -->
                 <div>
-                    <select id="filtro-marca" class="w-full bg-[#121212] border border-[#997A2C]/40 text-[#F5F5F0] text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-[#D4AF37] transition">
+                    <select
+                        id="filtro-marca"
+                        class="w-full bg-[#121212] border border-[#997A2C]/40 text-[#F5F5F0] text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-[#D4AF37] transition"
+                    >
                         <option value="todas">Todas las marcas</option>
                     </select>
                 </div>
 
                 <!-- Ordenar por Precio -->
                 <div>
-                    <select id="orden-precio" class="w-full bg-[#121212] border border-[#997A2C]/40 text-[#F5F5F0] text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-[#D4AF37] transition">
+                    <select
+                        id="orden-precio"
+                        class="w-full bg-[#121212] border border-[#997A2C]/40 text-[#F5F5F0] text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-[#D4AF37] transition"
+                    >
                         <option value="defecto">Ordenar por: Destacados</option>
                         <option value="mayor-menor">Precio: Mayor a menor</option>
                         <option value="menor-mayor">Precio: Menor a mayor</option>
@@ -150,7 +190,7 @@
         </div>
     </main>
 
-    <!-- 4. SECCIÓN DE UBICACIÓN CON MAPA DE GOOGLE MAPS -->
+    <!-- 4. SECCIÓN DE UBICACIÓN CON GOOGLE MAPS -->
     <section class="max-w-7xl mx-auto px-4 py-12 border-t border-[#D4AF37]/20">
         <div class="bg-[#1C1C1C] border border-[#D4AF37]/25 rounded-2xl overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-3">
             <!-- Detalles de la tienda -->
@@ -167,37 +207,80 @@
                     </p>
                     <p class="flex items-start gap-2">
                         <span>🕒</span>
-                        <span><strong class="text-[#F3E5AB]">Lunes a Viernes:</strong> 8:30 AM a 6:00 PM.<br>
-                        <strong class="text-[#F3E5AB]">Sábados:</strong> 9:30 AM a 6:00 PM.</span>
+                        <span>
+                            <strong class="text-[#F3E5AB]">Lunes a Viernes:</strong> 8:30 AM a 6:00 PM.<br>
+                            <strong class="text-[#F3E5AB]">Sábados:</strong> 9:30 AM a 6:00 PM.
+                        </span>
                     </p>
                 </div>
             </div>
 
-            <!-- Mapa Embebido de Google Maps -->
+            <!-- Mapa Embebido -->
             <div class="lg:col-span-2 h-72 lg:h-auto min-h-[280px] relative bg-[#121212]">
-                <iframe 
+                <iframe
                     class="w-full h-full border-0 map-dark-filter"
                     src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3922.97510286596!2d-66.90630399999999!3d10.502627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDMwJzA5LjUiTiA2NsKwNTQnMjIuNyJX!5e0!3m2!1ses!2sve!4v1794886886961!5m2!1ses!2sve"
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- 5. MODAL PARA VER LA FOTO COMPLETA -->
+    <div
+        id="modal-imagen"
+        class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-4"
+        onclick="cerrarModalImagen(event)"
+    >
+        <div
+            class="bg-[#1C1C1C] border border-[#D4AF37]/40 rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl relative animate-fade-in"
+            onclick="event.stopPropagation()"
+        >
+            <button
+                type="button"
+                onclick="cerrarModalImagen()"
+                aria-label="Cerrar ventana"
+                class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-[#121212]/90 border border-[#D4AF37]/50 text-[#F3E5AB] hover:bg-[#D4AF37] hover:text-[#121212] flex items-center justify-center font-bold transition cursor-pointer"
+            >
+                ✕
+            </button>
+
+            <div class="bg-[#121212] flex items-center justify-center p-4 max-h-[70vh]">
+                <img id="modal-img-src" src="" alt="" class="max-h-[64vh] w-auto object-contain rounded-lg">
+            </div>
+
+            <div class="p-4 border-t border-[#997A2C]/25 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <div>
+                    <span id="modal-img-marca" class="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold"></span>
+                    <h3 id="modal-img-titulo" class="text-base font-bold text-[#F5F5F0]"></h3>
+                </div>
+                <a
+                    id="modal-img-wa"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-center bg-gradient-to-r from-[#997A2C] via-[#D4AF37] to-[#997A2C] hover:from-[#D4AF37] hover:to-[#F3E5AB] text-[#121212] font-semibold px-4 py-2 rounded-xl text-sm transition"
+                >
+                    Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. FOOTER -->
     <footer class="bg-[#1C1C1C] border-t border-[#D4AF37]/20 text-center py-6 text-xs text-[#A39E93]">
         <p>&copy; 2026 <span class="text-[#D4AF37] font-semibold">Sami Chic</span>. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- LÓGICA JAVASCRIPT COMPLETA -->
+    <!-- 7. LÓGICA JAVASCRIPT -->
     <script>
         const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSK6UTUbyIHs76IZZN4eOvZdfEN4Ikzp2FTIkpC4xdz5bDvYD7RjOuCbd4J3PRCbFAJllYiesm1WE7r/pub?gid=1754182895&single=true&output=csv";
 
         let todosLosProductos = [];
 
-        // Función segura para leer filas CSV (soporta comas dentro de textos entre comillas)
+        // Lee filas CSV respetando comillas dobles
         function parsearFilaCSV(textoFila) {
             const resultado = [];
             let valorActual = '';
@@ -214,19 +297,20 @@
                     valorActual += char;
                 }
             }
+
             resultado.push(valorActual.trim());
             return resultado;
         }
 
+        // Carga el catálogo desde Google Sheets
         async function inicializarCatalogo() {
             try {
-                // Cargar inventario desde Google Sheets
                 const resSheet = await fetch(SHEET_CSV_URL);
                 const csvText = await resSheet.text();
-                
+
                 const filas = csvText.split(/\r?\n/).filter(line => line.trim() !== '');
                 const encabezados = parsearFilaCSV(filas[0]).map(h => h.toLowerCase());
-                
+
                 for (let i = 1; i < filas.length; i++) {
                     const valores = parsearFilaCSV(filas[i]);
                     if (valores.length >= 2) {
@@ -234,6 +318,7 @@
                         encabezados.forEach((enc, index) => {
                             producto[enc] = valores[index] ? valores[index].replace(/^"|"$/g, '').trim() : '';
                         });
+
                         if (producto.nombre) {
                             producto.precioNum = parseFloat(producto.precio_usd) || 0;
                             todosLosProductos.push(producto);
@@ -243,18 +328,21 @@
 
                 llenarSelectorMarcas();
                 aplicarFiltros();
-
             } catch (error) {
                 console.error("Error al cargar:", error);
-                document.getElementById('grid-productos').innerHTML = `<p class="text-[#D4AF37] text-center col-span-full py-10">No se pudo cargar el catálogo. Verifica el enlace de Google Sheets.</p>`;
+                document.getElementById('grid-productos').innerHTML = `
+                    <p class="text-[#D4AF37] text-center col-span-full py-10">
+                        No se pudo cargar el catálogo. Verifica el enlace de Google Sheets.
+                    </p>
+                `;
             }
         }
 
-        // Llenar automáticamente el filtro de marcas según lo que haya en el Excel
+        // Llena el select de marcas con valores únicos
         function llenarSelectorMarcas() {
             const selectMarca = document.getElementById('filtro-marca');
             const marcasUnicas = [...new Set(todosLosProductos.map(p => p.marca).filter(Boolean))].sort();
-            
+
             marcasUnicas.forEach(marca => {
                 const option = document.createElement('option');
                 option.value = marca;
@@ -263,30 +351,31 @@
             });
         }
 
-        // Filtrar y ordenar productos en tiempo real
+        // Filtra y ordena según controles activos
         function aplicarFiltros() {
             const textoBusqueda = document.getElementById('input-buscador').value.toLowerCase().trim();
             const generoSeleccionado = document.getElementById('filtro-genero').value.toLowerCase();
             const marcaSeleccionada = document.getElementById('filtro-marca').value;
             const ordenSeleccionado = document.getElementById('orden-precio').value;
 
-            let filtrados = todosLosProductos.filter(prod => {
-                // Ocultar productos agotados
+            const filtrados = todosLosProductos.filter(prod => {
                 const estado = prod.estado ? prod.estado.toLowerCase().trim() : '';
                 if (estado === 'agotado') return false;
 
-                const coincideTexto = prod.nombre.toLowerCase().includes(textoBusqueda) || 
-                                      (prod.marca && prod.marca.toLowerCase().includes(textoBusqueda));
+                const coincideTexto =
+                    prod.nombre.toLowerCase().includes(textoBusqueda) ||
+                    (prod.marca && prod.marca.toLowerCase().includes(textoBusqueda));
 
-                const coincideGenero = generoSeleccionado === 'todos' || 
-                                       (prod.genero && prod.genero.toLowerCase() === generoSeleccionado);
+                const coincideGenero =
+                    generoSeleccionado === 'todos' ||
+                    (prod.genero && prod.genero.toLowerCase() === generoSeleccionado);
 
-                const coincideMarca = marcaSeleccionada === 'todas' || prod.marca === marcaSeleccionada;
+                const coincideMarca =
+                    marcaSeleccionada === 'todas' || prod.marca === marcaSeleccionada;
 
                 return coincideTexto && coincideGenero && coincideMarca;
             });
 
-            // Ordenamiento por precio
             if (ordenSeleccionado === 'mayor-menor') {
                 filtrados.sort((a, b) => b.precioNum - a.precioNum);
             } else if (ordenSeleccionado === 'menor-mayor') {
@@ -296,7 +385,7 @@
             renderizarProductos(filtrados);
         }
 
-        // Dibujar las tarjetas en pantalla
+        // Renderiza las tarjetas del catálogo
         function renderizarProductos(lista) {
             const grid = document.getElementById('grid-productos');
             const contador = document.getElementById('contador-resultados');
@@ -305,46 +394,97 @@
             contador.textContent = `Mostrando ${lista.length} ${lista.length === 1 ? 'fragancia' : 'fragancias'}`;
 
             if (lista.length === 0) {
-                grid.innerHTML = `<div class="col-span-full text-center py-16 text-[#A39E93]">No se encontraron fragancias disponibles con esos filtros.</div>`;
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-16 text-[#A39E93]">
+                        No se encontraron fragancias disponibles con esos filtros.
+                    </div>
+                `;
                 return;
             }
 
             lista.forEach((prod, index) => {
+                const imagenSegura = prod.imagen || 'https://via.placeholder.com/300';
+                const precioTexto = prod.precioNum.toFixed(2);
+                const marcaTexto = prod.marca || 'Fragancia';
+                const generoTexto = prod.genero || 'Unisex';
+                const waLink = `https://wa.me/584242392516?text=${encodeURIComponent(`Hola, me interesa la fragancia ${prod.nombre} ($${precioTexto})`)}`;
+
                 const card = document.createElement('div');
                 card.className = "bg-[#1C1C1C] border border-[#997A2C]/30 rounded-2xl overflow-hidden shadow-md hover:border-[#D4AF37] hover:shadow-[#D4AF37]/10 transition duration-300 flex flex-col justify-between animate-fade-in";
                 card.style.animationDelay = `${index * 0.04}s`;
 
                 card.innerHTML = `
                     <div>
-                        <div class="h-56 bg-[#121212] overflow-hidden relative">
-                            <img src="${prod.imagen || 'https://via.placeholder.com/300'}" alt="${prod.nombre}" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                            <span class="absolute top-2.5 right-2.5 bg-[#121212]/90 backdrop-blur-md text-xs font-semibold px-2.5 py-1 rounded-full text-[#F3E5AB] border border-[#D4AF37]/40">${prod.marca || 'Fragancia'}</span>
+                        <div
+                            class="h-56 bg-[#121212] overflow-hidden relative cursor-pointer group"
+                            onclick="abrirModalImagen('${imagenSegura.replace(/'/g, "\\'")}', '${prod.nombre.replace(/'/g, "\\'")}', '${marcaTexto.replace(/'/g, "\\'")}', '${waLink.replace(/'/g, "\\'")}')"
+                        >
+                            <img
+                                src="${imagenSegura}"
+                                alt="${prod.nombre}"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                            >
+                            <span class="absolute top-2.5 right-2.5 bg-[#121212]/90 backdrop-blur-md text-xs font-semibold px-2.5 py-1 rounded-full text-[#F3E5AB] border border-[#D4AF37]/40">
+                                ${marcaTexto}
+                            </span>
+                            <span class="absolute bottom-2.5 left-2.5 bg-[#121212]/80 text-[11px] text-[#F5F5F0] px-2 py-0.5 rounded-md border border-[#997A2C]/30 opacity-90 group-hover:opacity-100 transition">
+                                🔍 Ver foto
+                            </span>
                         </div>
                         <div class="p-4">
-                            <span class="text-xs text-[#D4AF37] font-semibold uppercase tracking-wider">${prod.genero || 'Unisex'}</span>
+                            <span class="text-xs text-[#D4AF37] font-semibold uppercase tracking-wider">${generoTexto}</span>
                             <h3 class="text-base font-bold text-[#F5F5F0] mt-1 mb-2 leading-snug">${prod.nombre}</h3>
                             <div class="mt-3 pt-2 border-t border-[#997A2C]/20">
-                                <p class="text-xl font-bold text-[#F3E5AB]">$${prod.precioNum.toFixed(2)} <span class="text-xs font-normal text-[#A39E93]">USD</span></p>
+                                <p class="text-xl font-bold text-[#F3E5AB]">
+                                    $${precioTexto} <span class="text-xs font-normal text-[#A39E93]">USD</span>
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="p-4 pt-0">
-                        <a href="https://wa.me/584242392516?text=Hola,%20me%20interesa%20la%20fragancia%20${encodeURIComponent(prod.nombre)}%20($${prod.precioNum.toFixed(2)})" target="_blank" class="w-full block text-center bg-gradient-to-r from-[#997A2C] via-[#D4AF37] to-[#997A2C] hover:from-[#D4AF37] hover:to-[#F3E5AB] text-[#121212] font-semibold py-2.5 rounded-xl text-sm transition duration-200 shadow-sm">
+                        <a
+                            href="${waLink}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-full block text-center bg-gradient-to-r from-[#997A2C] via-[#D4AF37] to-[#997A2C] hover:from-[#D4AF37] hover:to-[#F3E5AB] text-[#121212] font-semibold py-2.5 rounded-xl text-sm transition duration-200 shadow-sm"
+                        >
                             Pedir por WhatsApp
                         </a>
                     </div>
                 `;
+
                 grid.appendChild(card);
             });
         }
 
-        // Eventos para el buscador y filtros en tiempo real
+        // Control del modal de imagen completa
+        function abrirModalImagen(src, titulo, marca, waHref) {
+            document.getElementById('modal-img-src').src = src;
+            document.getElementById('modal-img-src').alt = titulo;
+            document.getElementById('modal-img-titulo').textContent = titulo;
+            document.getElementById('modal-img-marca').textContent = marca;
+            document.getElementById('modal-img-wa').href = waHref;
+            document.getElementById('modal-imagen').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function cerrarModalImagen() {
+            document.getElementById('modal-imagen').classList.add('hidden');
+            document.getElementById('modal-img-src').src = '';
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') cerrarModalImagen();
+        });
+
+        // Listeners de filtros
         document.getElementById('input-buscador').addEventListener('input', aplicarFiltros);
         document.getElementById('filtro-genero').addEventListener('change', aplicarFiltros);
         document.getElementById('filtro-marca').addEventListener('change', aplicarFiltros);
         document.getElementById('orden-precio').addEventListener('change', aplicarFiltros);
 
-        // Iniciar aplicación
+        // Inicio del catálogo
         inicializarCatalogo();
     </script>
 </body>
